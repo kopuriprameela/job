@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('prameela') {
+            steps {
+                echo 'Hello World'
+            }
+     }
+        stage('Build') {
+            steps {
+                echo 'Building is  completed sucessfully'
+            }
+     }
+      stage('Deploy') {
+            steps {
+                echo 'Deploying  is in progress'
+            }
+     }
+      stage('Test') {
+            steps {
+                echo 'testing is tkes place'
+            }
+     }
+      stage('Release') {
+            steps {
+                echo 'Pipeline is completed sucessfully'
+            }
+     }
+    }
+}
